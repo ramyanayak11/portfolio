@@ -11,7 +11,7 @@ const projects = [
     buttonText: "View Code →",
     demoType: "video",    // "video" or "images", depending on what you want to show on the back of the card
     demoContent: {
-      video: "/mindful-journal-demo/mindful_journal.mov"
+      video: "/portfolio/mindful-journal-demo/mindful_journal.mov"
     }
   },
   {
@@ -23,10 +23,10 @@ const projects = [
     demoType: "images",
     demoContent: {
       images: [
-        "/landing-game-demo/1_main.png",
-        "/landing-game-demo/2_easy.png",
-        "/landing-game-demo/3_medium.png",
-        "/landing-game-demo/4_end.png"
+        "/portfolio/landing-game-demo/1_main.png",
+        "/portfolio/landing-game-demo/2_easy.png",
+        "/portfolio/landing-game-demo/3_medium.png",
+        "/portfolio/landing-game-demo/4_end.png"
       ]
     }
   },
@@ -38,7 +38,7 @@ const projects = [
     buttonText: "View Code →",
     demoType: "video",
     demoContent: {
-      video: "/movie-rentals-demo/movie_rentals.mov"
+      video: "/portfolio/movie-rentals-demo/movie_rentals.mov"
     }
   },
   {
@@ -50,11 +50,11 @@ const projects = [
     demoType: "images",
     demoContent: {
       images: [
-        "/ray-tracer-demo/1_main.png",
-        "/ray-tracer-demo/2_bump.png",
-        "/ray-tracer-demo/3_scaleX.png",
-        "/ray-tracer-demo/4_scaleY.png",
-        "/ray-tracer-demo/5_ui.png"
+        "/portfolio/ray-tracer-demo/1_main.png",
+        "/portfolio/ray-tracer-demo/2_bump.png",
+        "/portfolio/ray-tracer-demo/3_scaleX.png",
+        "/portfolio/ray-tracer-demo/4_scaleY.png",
+        "/portfolio/ray-tracer-demo/5_ui.png"
       ]
     }
   },
@@ -67,8 +67,8 @@ const projects = [
     demoType: "images",
     demoContent: {
       images: [
-        "/mesh-viewer-demo/1_mesh.png",
-        "/mesh-viewer-demo/2_multiple.png"
+        "/portfolio/mesh-viewer-demo/1_mesh.png",
+        "/portfolio/mesh-viewer-demo/2_multiple.png"
       ]
     }
   },
