@@ -1,0 +1,35 @@
+.connect h2 {
+  font-size: clamp(28px, 5vw, 44px);
+  margin-bottom: 2rem;
+}
+.social-row {
+  display: flex;
+  gap: 1rem;
+  margin: .5rem 0 2rem;
+}
+.circle {
+  width: 64px;
+  height: 64px;
+  border: 2px solid var(--ink);
+  background: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .2s ease, background .25s ease;
+}
+.circle:hover { transform: translateY(-2px); background: #f8f8f8; }
+.circle img { width: 28px; height: 28px; }
+
+.form-wrap {
+  max-width: 600px;
+}
+
+.status {
+  margin-top: .8rem;
+  font-weight: 700;
+  color: var(--accent-2);
+}
+
+/* textarea behavior: vertical resize only; don’t blow width */
+textarea { resize: vertical; max-width: 100%; }

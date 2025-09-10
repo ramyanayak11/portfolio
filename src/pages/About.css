@@ -1,0 +1,100 @@
+.about {
+  position: relative;
+}
+
+.about h2 {
+  font-size: clamp(28px, 5vw, 44px);
+  margin-bottom: 2rem;
+}
+
+/* indent all content under section headings */
+.content-block {
+  margin-left: 1.5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* vertically center photo if shorter */
+}
+
+.info p { 
+  font-size: 1.2rem;
+}
+
+.info-text,
+.info-photo {
+  flex: 1;              /* each col takes up 50% of the width */
+  margin-top: -0.5rem;
+  margin-bottom: -4rem;
+}
+
+.info-text {
+  max-width: 100%;      /* so text doesn’t overflow */
+  padding-right: 2rem;  /* spacing from middle divider */
+  text-align: justify;
+}
+
+.info-photo {
+  display: flex;        /* center photo horizontally */
+  justify-content: center;
+  align-items: center;
+}
+
+.info-photo img {
+  width: 400px;    /* custom image sizing */
+  height: 400px;   /* since photo is square */
+  height: auto;
+  border-radius: 50%;    /* makes the image circular */
+  object-fit: cover;     /* ensures the image fills the circle */
+  border: 5px solid black; /* subtle light border */
+}
+
+
+/* Education Section */
+.education {
+  margin-top: -0.3rem;
+  margin-bottom: 3rem;
+}
+.education h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.education p {
+  margin: .3rem 0;
+  font-size: 1.2rem;
+}
+.edu-detail {
+  color: #666;
+  font-size: .95rem;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: 1rem;
+}
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.skill-badge {
+  background: #f3f3f3;
+  border-radius: 999px;
+  border: 1px solid var(--ink);
+  padding: .5rem 1rem;
+  font-size: .95rem;
+  font-weight: 500;
+  color: #333;
+  transition: all .3s ease;
+  cursor: default;
+}
+.skill-badge:hover {
+  background: #333;
+  color: white;
+  transform: scale(1.05);
+}

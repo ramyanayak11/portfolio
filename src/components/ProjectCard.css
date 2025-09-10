@@ -1,0 +1,37 @@
+.project-card {
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 1rem;
+  display: grid;
+  gap: .6rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+.thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+}
+.title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.deck {
+  color: var(--muted);
+  margin: 0;
+}
+.tracklist {
+  margin: .2rem 0 0 1rem;
+  padding: 0;
+}
+.tracklist li {
+  margin: .2rem 0;
+  list-style: square;
+}

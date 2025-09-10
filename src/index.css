@@ -1,0 +1,139 @@
+/* Google fonts via @import to keep it simple */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+:root{
+  --bg: #fdf6ec;         /* light beige */
+  --ink: #111;           /* rich black text */
+  --muted: #5a5959;
+  /*--accent: #e63946;     /* bold red */
+  --accent: #ff5c00;     /* bold orange */
+  --accent-2: #457b9d;   /* teal */
+  --accent-3: #f4a261;   /* orange */
+  --card: #ffffff;
+  --border: #111;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.65;
+}
+
+/* App layout */
+.app {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+}
+
+/* Generic “magazine section” feel */
+.section {
+  padding: 3.5rem min(5vw, 48px);
+  opacity: 0;                /* will fade in via .reveal */
+  transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.section.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Editorial headings */
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.15;
+}
+
+h1.cover {
+  font-size: clamp(42px, 8vw, 82px);
+  margin: 0 0 .35em 0;
+  letter-spacing: -0.5px;
+}
+
+.kicker {
+  display: inline-block;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .9rem;
+  border-bottom: 3px solid var(--ink);
+  padding-bottom: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color .25s ease, border-color .25s ease;
+}
+a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Buttons */
+.btn {
+  appearance: none;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+  color: #fff;
+  padding: .7rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, background .25s ease, color .25s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn.outline {
+  background: transparent;
+  color: var(--ink);
+}
+.btn.outline:hover {
+  background: var(--ink);
+  color: #fff;
+}
+
+/* form base */
+form {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+input, textarea {
+  width: 100%;
+  border: 1px solid var(--ink);
+  border-radius: 6px;
+  padding: .8rem .9rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background: #fff;
+}
+label { font-weight: 600; display:block; margin-top:.5rem; margin-bottom:.3rem; }
+
+/* tasteful accent underline */
+.accent-underline {
+  box-shadow: inset 0 -0.5em 0 rgba(230,57,70,.15);
+}
+
+/* small utility */
+.stack { display: grid; gap: 1rem; }
+.stack-lg { display: grid; gap: 1.4rem; }

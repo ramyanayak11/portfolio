@@ -1,0 +1,52 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: auto;
+  border-right: 2px solid var(--ink);
+  background: linear-gradient(#fff, #fff) padding-box,
+              repeating-linear-gradient(90deg, var(--ink), var(--ink) 2px, transparent 2px, transparent 8px) border-box;
+  padding: 2rem 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid var(--ink);
+  }
+}
+
+.brand-kicker {
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-weight: 800;
+  border-bottom: 3px solid var(--ink);
+  padding-bottom: 2px;
+  display: inline-block;
+  margin-bottom: .35rem;
+}
+.brand h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+  margin: 0 0 2rem;
+  letter-spacing: -0.5px;
+}
+
+.nav {
+  display: grid;
+  gap: 1.0rem;
+  margin-bottom: 2rem;
+}
+.nav-link {
+  font-weight: 700;
+  padding: .35rem 0;
+  border-bottom: 2px solid transparent;
+}
+.nav-link.active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.sidebar-note { font-size: .95rem; color: var(--muted); }
+.sidebar-note p { margin: .5rem 0 0; }
