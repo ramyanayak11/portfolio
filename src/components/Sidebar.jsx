@@ -10,7 +10,7 @@ export default function Sidebar() {
       </div>
 
       <nav className="nav">
-        <NavLink to="/portfolio/" end className="nav-link">Home</NavLink>
+        <NavLink to="/" end className="nav-link">Home</NavLink>
         <NavLink to="/about" className="nav-link">About</NavLink>
         <NavLink to="/work" className="nav-link">Work</NavLink>
         <NavLink to="/connect" className="nav-link">Connect</NavLink>
